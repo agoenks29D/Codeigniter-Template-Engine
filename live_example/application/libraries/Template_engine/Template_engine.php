@@ -128,6 +128,16 @@ class Template_engine extends CI_Driver_Library
 	}
 
 	/**
+	 * Get Engine
+	 * 
+	 * @return object
+	 */
+	public function get_engine()
+	{
+		return $this->{$this->adapter}->get_engine();
+	}
+
+	/**
 	 * Set View Paths
 	 * 
 	 * @param array $view_paths
